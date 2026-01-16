@@ -1,16 +1,41 @@
-# React + Vite
+# 🚑 Smartwatch Emergency Health Prototyp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Ein interaktiver High-Fidelity-Prototyp für ein Smartwatch-Interface im medizinischen Notfalleinsatz. Entwickelt mit React und Tailwind CSS, um das Apple Watch "Ultra" Look & Feel zu simulieren.
 
-Currently, two official plugins are available:
+## 🌟 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Pairing-Simulation:** Bluetooth-Kopplungs-Interface mit Radar-Animation.
+- **Triage-Dashboard:** Echtzeit-Anzeige kritischer Vitalwerte (Herzfrequenz, SpO2, Blutdruck, Temp).
+- **Interaktive Detail-Ansichten:**
+  - 💓 **Live-EKG:** Canvas-basierte Simulation einer PQRST-Welle (Tachykardie).
+  - 🌬️ **SpO2-Verlauf:** SVG-Graph mit Hypoxie-Warnung (animiert).
+  - 🌡️ **Fieberkurve:** Geglättetes Liniendiagramm der letzten 24h.
+  - 🩸 **Blutdruck-Trend:** Modernes Range-Bar-Diagramm.
+- **Notfall-ID:** Schneller Zugriff auf Allergien, Medikation und Blutgruppe.
+- **Mobile-First UX:** Optimierte Touch-Targets nach HCI-Richtlinien.
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Framework:** React (Vite)
+- **Styling:** Tailwind CSS
+- **Icons:** Lucide React
+- **Grafik:** HTML5 Canvas (EKG) & SVG
 
-## Expanding the ESLint configuration
+## 🚀 Installation & Start
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. **Repository klonen:**
+   ```bash
+   git clone <DEINE-REPO-URL>
+   cd smartwatch-proto
+   ```
+
+2. **Abhängigkeiten installieren:**
+   ```bash
+   npm install
+   ```
+
+3. **Entwicklungsserver starten:**
+   ```bash
+   npm run dev
+   ```
+
